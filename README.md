@@ -4,12 +4,6 @@
 
 This cookbook installs and configures [MailHog](https://github.com/mailhog/MailHog)
 
-### Tested on
-
-* Debian 9
-* Ubintu 18.04
-* Centos 7
-
 # Requirements
 
 
@@ -33,7 +27,7 @@ This cookbook installs and configures [MailHog](https://github.com/mailhog/MailH
 * `node['mailhog']['install_path']` -  Defaults to `/usr/local/bin`.
 * `node['mailhog']['url_prefix']` -  Defaults to `nil`.
 * `node['mailhog']['http_port']` -  Defaults to `8025`.
-* `node['mailhog']['smtp_port']` -  Defaults to `587`.
+* `node['mailhog']['smtp_port']` -  Defaults to `1025`.
 
 # Recipes
 

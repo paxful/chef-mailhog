@@ -9,4 +9,4 @@ default['mailhog']['install_path'] = '/usr/local/bin'
 default['mailhog']['url_prefix'] = nil
 
 default['mailhog']['http_port'] = '8025'
-default['mailhog']['smtp_port'] = '587'
+default['mailhog']['smtp_port'] = '1025'

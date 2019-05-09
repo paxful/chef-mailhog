@@ -10,3 +10,5 @@ default['mailhog']['url_prefix'] = nil
 
 default['mailhog']['http_port'] = '8025'
 default['mailhog']['smtp_port'] = '1025'
+
+default['mailhog']['enable_log'] = true

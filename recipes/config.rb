@@ -21,6 +21,12 @@ service_unit_content = {
   'Install' => { 'WantedBy' => 'multi-user.target' },
 }
 
+# disable logging if defined
+unless node['mailhog']['enable_log']
+  service_unit_content['Service']['StandardOutput'] = 'null'
+  service_unit_content['Service']['StandardError'] = 'null'
+end
+
 systemd_unit 'mailhog.service' do
   content service_unit_content
   action :create

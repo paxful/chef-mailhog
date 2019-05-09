@@ -28,6 +28,7 @@ This cookbook installs and configures [MailHog](https://github.com/mailhog/MailH
 * `node['mailhog']['url_prefix']` -  Defaults to `nil`.
 * `node['mailhog']['http_port']` -  Defaults to `8025`.
 * `node['mailhog']['smtp_port']` -  Defaults to `1025`.
+* `node['mailhog']['enable_log']` -  Defaults to `true`.
 
 # Recipes
 
